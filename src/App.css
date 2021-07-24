@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+.App{
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App-header{
+  padding: 0.5rem;
+  height: 5.5rem;
+  background-color: #111;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header div:first-child{
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header-logo{
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.App-header-basket{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.App-header-basket div:first-child{
+  padding: 0;
+  display: grid;
+  height: 80%;
+}
+
+.App-header-basket div:first-child a{
+  color: white;
+  font-weight: bold;
+}
+
+.App-header-basket div a{
+  color: white;
+  font-size: 0.8rem;
+}
+
+
+
+.App-main {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  color: #111;
+}
+
+.App-nav{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 12vw;
+  margin-left: 1rem;
+}
+
+.App-nav input{
+  padding: 0.5rem;
+  width: 95%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px soli #111;
+
+}
+
+.App-nav a{
+  width: 100%;
+  font-size: 1.5rem;
+  display: block;
+  color: #111;
+  font-weight: 400;
+  padding: 0.25rem;
+  font-size: smaller;
+  text-decoration: none;
+}
+
+
+.App-container {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80vw;
+}
+
+.App-container-header{
+  max-height: 6rem;
+}
+
+.App-container-header h1{
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.App-container-content{
+  background-color: #f3f3f7;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.App-content-item{
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.App-content-item div{
+  height: 3.5rem;
+}
+
+.App-content-item img{
+  margin-top: 1.5rem;
+  max-width: 15vw;
+  max-height: 200px;
+}
+
+.App-content-item span{
+  font-size: 2rem;
+}
+
+.App-content-item p{
+  font-size: 1rem;
+}
+
+
+.App-content-item button{
+  border: none;
+  border-radius: 2rem;
+  width: 80%;
+  height: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  font-weight:600;
+  padding: 0.8rem;
+}
+
+.App-content-item button:hover{
+  border: 2px solid #111;
+}
+
+.App-page-ctrl{
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App-page-ctrl div button{
+  margin: 0.2rem;
+  background-color: white;
+  color: black;
+  height: 2rem;
+  border-radius: 4rem;
+  border: 2px solid #111;
+  padding: 0.5rem;
+
+}
+
+.App-page-ctrl div button:hover{
+  background-color: #111;
+  color: white;
+}
+
+#App-page-act {
+  background-color: #111;
+  color: white;
+}
+
+.App-footer{
+  display: flex;
+  background-color: #111;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
 }
